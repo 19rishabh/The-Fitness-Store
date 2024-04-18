@@ -1,47 +1,68 @@
--- Rename the database to GymStore
-ALTER DATABASE kapetann RENAME TO GymStore;
 
--- Table structure for table "transactions"
-CREATE TABLE transactions (
-  id SERIAL PRIMARY KEY,
-  price NUMERIC(10,2) NOT NULL,
-  title VARCHAR(100) NOT NULL,
-  quantity INTEGER NOT NULL,
-  subtotal_amount NUMERIC(10,2) NOT NULL,
-  date DATE NOT NULL,
-  invoice_number VARCHAR(100) NOT NULL,
-  user_id INTEGER NOT NULL
-);
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+START TRANSACTION;
+SET time_zone = "+00:00";
 
--- Table structure for table "products"
-CREATE TABLE products (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  category VARCHAR(50) NOT NULL,
-  description TEXT,
-  price NUMERIC(10,2) NOT NULL
-);
 
--- Insert sample data for gym equipment
-INSERT INTO products (name, category, description, price) VALUES
-('Adjustable Dumbbells', 'Equipment', 'Set of adjustable dumbbells with various weight settings.', 149.99),
-('Weight Bench', 'Equipment', 'Heavy-duty weight bench with adjustable incline and decline positions.', 199.99),
-('Jump Rope', 'Equipment', 'High-quality jump rope for cardio and agility training.', 19.99),
-('Resistance Bands Set', 'Equipment', 'Set of resistance bands with different resistance levels for full-body workouts.', 29.99),
-('Yoga Mat', 'Equipment', 'Non-slip yoga mat for yoga, pilates, and stretching exercises.', 24.99);
+CREATE TABLE `orders` (
+  `id` int(11) NOT NULL,
+  `price` decimal(10,2) NOT NULL,
+  `title` varchar(100) NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `subtotal_amount` decimal(10,2) NOT NULL,
+  `date` date NOT NULL,
+  `invoice_number` varchar(100) NOT NULL,
+  `user_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Insert sample data for apparel
-INSERT INTO products (name, category, description, price) VALUES
-('Mens Compression Shirt', 'Apparel', 'Compression shirt designed to enhance performance and recovery.', 29.99),
-('Womens Leggings', 'Apparel', 'High-waisted leggings with moisture-wicking fabric for comfort during workouts.', 34.99),
-('Mens Training Shorts', 'Apparel', 'Breathable training shorts with built-in moisture management.', 24.99),
-('Womens Sports Bra', 'Apparel', 'Supportive sports bra with adjustable straps and removable pads.', 19.99),
-('Unisex Sweatshirt', 'Apparel', 'Cozy sweatshirt made from soft, stretchy fabric for warmth and comfort.', 39.99);
+--
+-- Dumping data for table `orders`
+--
 
--- Insert sample data for supplements
-INSERT INTO products (name, category, description, price) VALUES
-('Whey Protein Powder', 'Supplements', 'Premium whey protein powder with essential amino acids for muscle growth and recovery.', 49.99),
-('BCAA Capsules', 'Supplements', 'Branched-chain amino acid capsules to support muscle repair and reduce muscle soreness.', 29.99),
-('Creatine Monohydrate', 'Supplements', 'Pure creatine monohydrate powder for improved strength and power output.', 19.99),
-('Pre-Workout Energy Drink', 'Supplements', 'Energizing pre-workout drink formulated to enhance focus, endurance, and performance.', 39.99),
-('Omega-3 Fish Oil Softgels', 'Supplements', 'Omega-3 fatty acid supplements for cardiovascular health and joint support.', 14.99);
+INSERT INTO `orders` (`id`, `price`, `title`, `quantity`, `subtotal_amount`, `date`, `invoice_number`, `user_id`) VALUES
+(1, '40.00', 'COLOMBIAN SUPREMO CUP (12 OZ)', 1, '40.00', '2023-04-21', 'INV-760084', 0),
+(2, '45.00', 'AMERICANO - HOT ESPRESSO (12 OZ)', 1, '45.00', '2023-04-21', 'INV-760084', 0),
+(3, '40.00', 'COLOMBIAN SUPREMO CUP (12 OZ)', 1, '40.00', '2023-04-21', 'INV-174394', 2),
+(4, '50.00', 'NITRO COLD BREW W/ STRAW (12 OZ)', 1, '50.00', '2023-04-21', 'INV-741371', 2),
+(5, '45.00', 'AMERICANO - HOT ESPRESSO (12 OZ)', 1, '45.00', '2023-04-21', 'INV-982020', 2),
+(6, '40.00', 'COLOMBIAN SUPREMO CUP (12 OZ)', 1, '40.00', '2023-04-21', 'INV-144116', 2);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `username` varchar(50) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(50) NOT NULL,
+  `create_datetime` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `name`, `username`, `email`, `password`, `create_datetime`) VALUES
+(1, 'John Rovie', 'RovicBalingbing', 'balingbing.johnrovie20@gmail.com', '850f5f5611e06993cc07363c98c560d0', '2023-04-18 08:59:41'),
+(2, 'admin', 'admin', 'admin@gmail.com', '21232f297a57a5a743894a0e4a801fc3', '2023-04-18 11:00:40'),
+(3, 'sample', 'sample', 'sample', '5e8ff9bf55ba3508199d22e984129be6', '2023-04-18 11:03:23'),
+(4, 'Rovic', 'Rovic', 'Rovic@gmail.com', '6bafff124175b93f6358d465c5a654d9', '2023-04-19 12:14:34');
+
+
+ALTER TABLE `orders`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`);
+
+ALTER TABLE `orders`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
