@@ -375,11 +375,11 @@ try {
                                     <img src="assets/images/pour.jpg" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="title text-decoration-none">Batch Brew vs. Pour Over | The Pros and Cons Experienced by Coffee Professionals</a>
-                                    <span>by The Way to Coffee</span>
-                                    <p>Thinking back 15-20 years, I remember my parents going about their morning ritual of brewing coffee on weekends before burying...</p>
+                                    <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
+                                    <span></span>
+                                    <p>You’re in luck, because I’ve been drinking protein shakes for years and today I’m sharing with you all my secrets...</p>
                                     <center>
-                                        <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="btn">Read More</a>
+                                        <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
