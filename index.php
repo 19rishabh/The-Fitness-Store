@@ -93,7 +93,7 @@ try {
                 </div>
                 <div class="total">
                     <div class="total-title">Total: </div>
-                    <div class="total-price">₱0</div>
+                    <div class="total-price">Rs.</div>
                 </div>
                 <!-- BUY BUTTON -->
                 <button type="button" class="btn-buy">Checkout Now</button>
@@ -104,9 +104,6 @@ try {
         <section class="home" id="home">
             <div class="content">
                 <h3>Welcome to The Fitness Store!</h3>
-                <p>
-                    <strong>We are open 4:00 PM to 9:00 PM.</strong>
-                </p>
                 <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
             </div>
         </section>
@@ -116,7 +113,8 @@ try {
             <h1 class="heading"> <span>About</span> Us</h1>
             <div class="row g-0">
                 <div class="image">
-                    <img src="assets/images/about-img.png" alt="" class="img-fluid">
+                    <img src="assets/images/hero.webp" class="img-hero" alt="Hero Image">
+
                 </div>
                 <div class="content">
                     <h3>Welcome to The Fitness Store!</h3>
@@ -133,31 +131,31 @@ try {
 
         <!-- MENU SECTION -->
         <section class="menu" id="menu">
-            <h1 class="heading">Our <span>Menu</span></h1>
+            <h1 class="heading">Our <span>Products</span></h1>
             <div class="box-container">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-1.png" alt="" class="product-img">
-                                <h3 class="product-title">Americano - Hot Espresso (12 OZ)</h3>
-                                <div class="price">₱45.00</div>
+                            <img src="assets/images/Tanktops.webp" alt="Tanktops">
+                                <h3 class="product-title">MALE TANKTOPS</h3>
+                                <div class="price">Rs.450.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-2.png" alt="" class="product-img">
-                                <h3 class="product-title">Colombian Supremo Cup (12 OZ)</h3>
-                                <div class="price">₱40.00</div>
+                            <img src="assets/images/MuscleTech.webp" alt="MuscleTech">
+                                <h3 class="product-title">MUSCLETECH SUPPLEMENT</h3>
+                                <div class="price">Rs. 900.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-3.png" alt="" class="product-img">
-                                <h3 class="product-title">Nitro Cold Brew w/ Straw (12 OZ)</h3>
-                                <div class="price">₱50.00</div>
+                            <img src="assets/images/FemaleT.webp" alt="FemaleT">
+                                <h3 class="product-title">WOMEN T-SHIRT</h3>
+                                <div class="price">Rs.450.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -165,25 +163,25 @@ try {
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-4.png" alt="" class="product-img">
-                                <h3 class="product-title">Seasonal Single-Origin (12 OZ)</h3>
-                                <div class="price">₱30.00</div>
+                            <img src="assets/images/Dumbells.webp" alt="Dumbells">
+                                <h3 class="product-title">ADJUSTABLE DUMBELLS</h3>
+                                <div class="price">Rs 750.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-5.png" alt="" class="product-img">
-                                <h3 class="product-title">Indonesian Sumatra Mandheling (12 OZ)</h3>
-                                <div class="price">₱40.00</div>
+                            <img src="assets/images/GymBag.webp" alt="GymBag">
+                                <h3 class="product-title">GYMBAG</h3>
+                                <div class="price">Rs 300.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-6.png" alt="" class="product-img">
-                                <h3 class="product-title">Mint Mojito Iced Coffee (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                            <img src="assets/images/Whey.webp" alt="Whey">
+                                <h3 class="product-title">WHEY PROTEIN</h3>
+                                <div class="price">Rs 1055.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -191,25 +189,25 @@ try {
                     <div class="row row-to-hide">
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-7.png" alt="" class="product-img">
-                                <h3 class="product-title">Iced Americano (12 OZ)</h3>
-                                <div class="price">₱35.00</div>
+                            <img src="assets/images/PreWorkout.webp" alt="PreWorkout">
+                                <h3 class="product-title">PREWORKOUT</h3>
+                                <div class="price">Rs 835.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-8.png" alt="" class="product-img">
-                                <h3 class="product-title">Specialty Brews (12 OZ)</h3>
-                                <div class="price">₱85.00</div>
+                            <img src="assets/images/resistance.webp" alt="Resistance Bands">
+                                <h3 class="product-title">RESISTANCE BANDS</h3>
+                                <div class="price">Rs 585.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-9.png" alt="" class="product-img">
-                                <h3 class="product-title">Seasonal Origin (12 OZ)</h3>
-                                <div class="price">₱80.00</div>
+                            <img src="assets/images/kettlebells.webp" alt="Kettlebells">
+                                <h3 class="product-title">KETTLEBELLS</h3>
+                                <div class="price">Rs. 680.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -217,25 +215,25 @@ try {
                     <div class="row row-to-hide">
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-10.png" alt="" class="product-img">
-                                <h3 class="product-title">Ethiopian Yirgacheffe Cup (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                            <img src="assets/images/BoySet.webp" alt="Boy Set">
+                                <h3 class="product-title">BOYS SET</h3>
+                                <div class="price">Rs 950.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-11.png" alt="" class="product-img">
-                                <h3 class="product-title">Cold Brew Tonic In a Cup (12 OZ)</h3>
-                                <div class="price">₱35.00</div>
+                            <img src="assets/images/WomenWear.webp" alt="Women's Wear">
+                                <h3 class="product-title">WOMEN SET</h3>
+                                <div class="price">Rs. 635.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="assets/images/cart-item-12.png" alt="" class="product-img">
-                                <h3 class="product-title">Caramel Cold Foam Cold Brew (12 OZ)</h3>
-                                <div class="price">₱55.00</div>
+                            <img src="assets/images/BCCA.webp" alt="Branched-Chain Amino Acids (BCAA)">
+                                <h3 class="product-title">BCCA SUPPLEMENT</h3>
+                                <div class="price">Rs. 955.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
                             </div>
                         </div>
@@ -256,7 +254,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery1.jpg" alt="">
+                                <img src="assets/images/Review-1.webp" alt="Review 1">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -273,7 +271,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery2.jpg" alt="">
+                                <img src="assets/images/Review-5.avif" alt="Review 5">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -290,7 +288,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery3.jpg" alt="">
+                                <img src="assets/images/Review-3.webp" alt="Review 3">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -300,7 +298,7 @@ try {
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
-                                    <h3 class="gallery-title">Picture 3</h3>
+<h3 class="gallery-title">Picture 3</h3>
                                 </div>
                             </div>
                         </div>
@@ -309,7 +307,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery4.jpg" alt="">
+                                <img src="assets/images/Review-4.avif" alt="Review 4">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -326,24 +324,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery4.jpg" alt="">
-                                </div>
-                                <div class="content">
-                                    <div class="stars">
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star"></i>
-                                        <i class="fas fa-star-half-alt"></i>
-                                    </div>
-                                    <h3 class="gallery-title">Picture 4</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <div class="image">
-                                    <img src="assets/images/gallery5.jpg" alt="">
+                                <img src="assets/images/Review-6.webp" alt="Review 6">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -354,6 +335,23 @@ try {
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
                                     <h3 class="gallery-title">Picture 5</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="image">
+                                <img src="assets/images/Review-8.webp" alt="Review 8">
+                                </div>
+                                <div class="content">
+                                    <div class="stars">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                    <h3 class="gallery-title">Picture 6</h3>
                                 </div>
                             </div>
                         </div>
@@ -421,70 +419,72 @@ try {
             </div>
         </section>
 
-        <!-- TESTIMONIALS SECTION -->
-        <section class="review" id="review">
-            <h1 class="heading"><span>Testimo</span>nials</h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="assets/images/pic-1.png" alt="" class="user">
-                                <h3>Jane Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="assets/images/pic-2.png" alt="" class="user">
-                                <h3>John Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                <img src="assets/images/quote-img.png" alt="" class="quote">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                </p>
-                                <img src="assets/images/pic-3.png" alt="" class="user">
-                                <h3>Jane Doe</h3>
-                                <div class="stars">
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star"></i>
-                                    <i class="fas fa-star-half-alt"></i>
-                                </div>
-                            </div>
+        <!-- Testimonials SECTION -->
+<section class="review" id="review">
+    <h1 class="heading"><span>Testimonials</span></h1>
+    <div class="box-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/quote-img.png" alt="" class="quote">
+                        <p>
+                            I've been shopping at The Fitness Store for all my workout needs, and I couldn't be happier with their service! 
+                            Their range of products is extensive, and the quality is top-notch. Highly recommended!
+                        </p>
+                        <img src="assets/images/pic-1.png" alt="" class="user">
+                        <h3>Jane Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
                         </div>
                     </div>
-                </div>  
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/quote-img.png" alt="" class="quote">
+                        <p>
+                            As a fitness enthusiast, I've tried numerous online stores, but The Fitness Store stands out for its exceptional 
+                            customer service and speedy delivery. Plus, their selection of supplements is fantastic!
+                        </p>
+                        <img src="assets/images/pic-2.png" alt="" class="user">
+                        <h3>John Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="assets/images/quote-img.png" alt="" class="quote">
+                        <p>
+                            The Fitness Store is my go-to destination for all my fitness apparel needs. Their collection is trendy, 
+                            comfortable, and affordable. Plus, their website is easy to navigate, making shopping a breeze!
+                        </p>
+                        <img src="assets/images/pic-3.png" alt="" class="user">
+                        <h3>Jane Doe</h3>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
+        </div>  
+    </div>
+</section>
+
+
 
         <!-- CONTACT US SECTION -->
         <section class="contact" id="contact">
@@ -511,9 +511,9 @@ try {
                 <div class="logo">
                     <img src="assets/images/logo.png" class="img"><br />
                     <i class="fas fa-envelope"></i>
-                    <p>abfiguerrez18@gmail.com</p><br />
+                    <p>TheFitnessStore@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
-                    <p>+63 917-134-1422</p><br />
+                    <p>+91 9869461489</p><br />
                     <i class="fab fa-facebook-messenger"></i>
                     <p>@TheFitnessStore</p><br />
                 </div>
@@ -546,7 +546,7 @@ try {
                 <div class="credit">
                     <hr /><br/>
                     <h2>The Fitness Store © 2023 | All Rights Reserved.</h2>
-                    <h2>Designed by <span>Algo Filipino</span> | Teravision</h2>
+            
                 </div>
             </div>
         </section>
@@ -598,7 +598,7 @@ try {
                 for(const form of document.getElementsByTagName('form')) {
                     form.reset();
                 }
-            }
+}
 
             // CODE FOR THE GOOGLE MAPS API
             function initMap() {
