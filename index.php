@@ -271,7 +271,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-5.avif" alt="Review 5">
+                                <img src="assets/images/Review-5.webp" alt="Review 5">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -307,7 +307,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-4.avif" alt="Review 4">
+                                <img src="assets/images/Review-4.webp" alt="Review 4">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
