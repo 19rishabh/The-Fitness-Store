@@ -373,11 +373,11 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/pour.jpg" alt="">
+                                    <img src="assets/images/blog1" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
-                                    <span>By </span>
+                                    <span>By Steve Kamb </span>
                                     <p>You’re in luck, because I’ve been drinking protein shakes for years and today I’m sharing with you all my secrets...</p>
                                     <center>
                                     <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="btn">Read More</a>
@@ -388,10 +388,10 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/carbon.webp" alt="">
+                                    <img src="assets/images/blog2" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="https://www.taylorsofharrogate.co.uk/news/carbon-neutral-tea-and-coffee" target="_blank" class="title text-decoration-none">Carbon Neutral Tea and Coffee</a>
+                                    <a href="" target="_blank" class="title text-decoration-none">Carbon Neutral Tea and Coffee</a>
                                     <span>by Taylors editorial team</span>
                                     <p>All our tea and coffee is carbon neutral – but what does that actually mean? Here’s an explanation of how we’ve lowered our carbon footprint, and the three projects in Kenya, Malawi and Uganda which have reduced the emissions of our products to...</p>
                                     <center>
@@ -403,14 +403,14 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/coffeemaker.jpg" alt="">
+                                    <img src="assets/images/blog3" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="https://coffeestylish.com/best-drip-coffee-makers/" target="_blank" class="title text-decoration-none">BEST DRIP COFFEE MAKERS 2020</a>
+                                    <a href="" target="_blank" class="title text-decoration-none">BEST DRIP COFFEE MAKERS 2020</a>
                                     <span>by CoffeeStylish.com</span>
                                     <p>What is a good coffee maker? A good home coffee maker should have removable parts so it can be cleaned completely because you don’t want mold or buildups in your machine. It should be fast. It...</p>
                                     <center>
-                                        <a href="https://coffeestylish.com/best-drip-coffee-makers/" target="_blank" class="btn">Read More</a>
+                                        <a href="" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
