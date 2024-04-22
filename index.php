@@ -255,7 +255,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery1.jpg" alt="gallery1">
+                                    <img src="assets/images/gallery1.webp" alt="gallery1">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -272,7 +272,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery2.jpg" alt="gallery2">
+                                    <img src="assets/images/gallery2.webp" alt="gallery2">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -289,7 +289,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery3.jpg" alt="gallery3">
+                                    <img src="assets/images/gallery3.webp" alt="gallery3">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -308,7 +308,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery4.jpg" alt="gallery4">
+                                    <img src="assets/images/gallery4.webp" alt="gallery4">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -325,7 +325,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery5.jpg" alt="gallery5">
+                                    <img src="assets/images/gallery5.webp" alt="gallery5">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -342,7 +342,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/gallery6.jpg" alt="gallery6">
+                                    <img src="assets/images/gallery6.webp" alt="gallery6">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
