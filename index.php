@@ -58,7 +58,7 @@ try {
                             <a href="#about" class="text-decoration-none">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#menu" class="text-decoration-none">Menu</a>
+                            <a href="#menu" class="text-decoration-none">Products</a>
                         </li>
                         <li class="nav-item">
                             <a href="#gallery"class="text-decoration-none">Gallery</a>
