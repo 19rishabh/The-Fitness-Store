@@ -17,6 +17,7 @@ try {
     echo "Connection failed: " . $e->getMessage();
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,7 +31,7 @@ try {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-        <script srca="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Hhh_14Uam62GXGaTMcXWhhVkYg0EbDY&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Hhh_14Uam62GXGaTMcXWhhVkYg0EbDY&callback=initMap" async defer></script>
 
         <!-- Custom CSS File Link -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -39,6 +40,7 @@ try {
         <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"><!-- Favicon / Icon -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Google font cdn link -->
     </head>
+
     <body>
         <!-- HEADER SECTION -->
         <header class="header">
@@ -113,11 +115,10 @@ try {
             <h1 class="heading"> <span>About</span> Us</h1>
             <div class="row g-0">
                 <div class="image">
-                    <img src="assets/images/hero.webp" class="img-hero" alt="Hero Image">
-
+                <img src="assets/images/hero.webp" class="img-hero" alt="Hero Image">
                 </div>
                 <div class="content">
-                    <h3>Welcome to The Fitness Store!</h3>
+                <h3>Welcome to The Fitness Store!</h3>
                     <p>
                     At The Fitness Store, we are dedicated to empowering fitness enthusiasts on their journey to wellness. Our mission is to provide a comprehensive online platform that serves as a haven for fitness aficionados, offering a wide array of top-notch gym equipment, premium fitness products, stylish workout attire, and essential supplements like protein shakes.
                     </p>
@@ -131,13 +132,13 @@ try {
 
         <!-- MENU SECTION -->
         <section class="menu" id="menu">
-            <h1 class="heading">Our <span>Products</span></h1>
+            <h1 class="heading">Our <span>Menu</span></h1>
             <div class="box-container">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="assets/images/Tanktops.webp" alt="Tanktops">
+                            <img src="assets/images/Tanktops.webp" alt="Tanktops" class="product-img">
                                 <h3 class="product-title">MALE TANKTOPS</h3>
                                 <div class="price">Rs.450.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -197,7 +198,7 @@ try {
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="assets/images/resistance.webp" alt="Resistance Bands">
+                                <img src="assets/images/resistance.webp" alt="Resistance Bands">
                                 <h3 class="product-title">RESISTANCE BANDS</h3>
                                 <div class="price">Rs 585.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -254,7 +255,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-1.webp" alt="Review 1">
+                                    <img src="assets/images/gallery1.jpg" alt="gallery1">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -271,7 +272,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-5.webp" alt="Review 5">
+                                    <img src="assets/images/gallery2.jpg" alt="gallery2">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -288,7 +289,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-3.webp" alt="Review 3">
+                                    <img src="assets/images/gallery3.jpg" alt="gallery3">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -298,7 +299,7 @@ try {
                                         <i class="fas fa-star"></i>
                                         <i class="fas fa-star-half-alt"></i>
                                     </div>
-<h3 class="gallery-title">Picture 3</h3>
+                                    <h3 class="gallery-title">Picture 3</h3>
                                 </div>
                             </div>
                         </div>
@@ -307,7 +308,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-4.webp" alt="Review 4">
+                                    <img src="assets/images/gallery4.jpg" alt="gallery4">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -324,7 +325,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-6.webp" alt="Review 6">
+                                    <img src="assets/images/gallery5.jpg" alt="gallery5">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -341,7 +342,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="assets/images/Review-8.webp" alt="Review 8">
+                                    <img src="assets/images/gallery6.jpg" alt="gallery6">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -375,11 +376,11 @@ try {
                                     <img src="assets/images/pour.jpg" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
-                                    <span></span>
+                                    <a href="" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
+                                    <span>By </span>
                                     <p>You’re in luck, because I’ve been drinking protein shakes for years and today I’m sharing with you all my secrets...</p>
                                     <center>
-                                        <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="btn">Read More</a>
+                                    <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
@@ -419,72 +420,70 @@ try {
             </div>
         </section>
 
-        <!-- Testimonials SECTION -->
-<section class="review" id="review">
-    <h1 class="heading"><span>Testimonials</span></h1>
-    <div class="box-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            I've been shopping at The Fitness Store for all my workout needs, and I couldn't be happier with their service! 
+        <!-- TESTIMONIALS SECTION -->
+        <section class="review" id="review">
+            <h1 class="heading"><span>Testimo</span>nials</h1>
+            <div class="box-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                I've been shopping at The Fitness Store for all my workout needs, and I couldn't be happier with their service! 
                             Their range of products is extensive, and the quality is top-notch. Highly recommended!
-                        </p>
-                        <img src="assets/images/pic-1.png" alt="" class="user">
-                        <h3>Jane Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="assets/images/pic-1.png" alt="" class="user">
+                                <h3>Jane Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            As a fitness enthusiast, I've tried numerous online stores, but The Fitness Store stands out for its exceptional 
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                As a fitness enthusiast, I've tried numerous online stores, but The Fitness Store stands out for its exceptional 
                             customer service and speedy delivery. Plus, their selection of supplements is fantastic!
-                        </p>
-                        <img src="assets/images/pic-2.png" alt="" class="user">
-                        <h3>John Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="assets/images/pic-2.png" alt="" class="user">
+                                <h3>John Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            The Fitness Store is my go-to destination for all my fitness apparel needs. Their collection is trendy, 
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                The Fitness Store is my go-to destination for all my fitness apparel needs. Their collection is trendy, 
                             comfortable, and affordable. Plus, their website is easy to navigate, making shopping a breeze!
-                        </p>
-                        <img src="assets/images/pic-3.png" alt="" class="user">
-                        <h3>Jane Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="assets/images/pic-3.png" alt="" class="user">
+                                <h3>Jane Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
-        </div>  
-    </div>
-</section>
-
-
+        </section>
 
         <!-- CONTACT US SECTION -->
         <section class="contact" id="contact">
@@ -546,7 +545,6 @@ try {
                 <div class="credit">
                     <hr /><br/>
                     <h2>The Fitness Store © 2023 | All Rights Reserved.</h2>
-            
                 </div>
             </div>
         </section>
@@ -598,7 +596,7 @@ try {
                 for(const form of document.getElementsByTagName('form')) {
                     form.reset();
                 }
-}
+            }
 
             // CODE FOR THE GOOGLE MAPS API
             function initMap() {
