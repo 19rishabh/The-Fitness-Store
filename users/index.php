@@ -91,7 +91,7 @@
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
-                <h3>Welcome to The Fitness Store!</h3>
+                 <h3>Welcome to The Fitness Store <?php echo $_SESSION['username']; ?>!</h3>
                 <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
             </div>
         </section>
@@ -572,8 +572,8 @@
         </div>
 
         <!-- JS File Link -->
-        <script src="assets/js/responses.js"></script>
-        <script src="assets/js/convo.js"></script>
+        <script src="../assets/js/responses.js"></script>
+        <script src="../assets/js/convo.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
