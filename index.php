@@ -37,7 +37,7 @@ try {
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/css/convo.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- font awesome cdn link -->
-        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"><!-- Favicon / Icon -->
+        <link rel="icon" type="image/x-icon" href="assets/images/LOGO.webp"><!-- Favicon / Icon -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Google font cdn link -->
     </head>
 
@@ -45,7 +45,7 @@ try {
         <!-- HEADER SECTION -->
         <header class="header">
             <a href="#" class="logo">
-                <img src="assets/images/logo.png" class="img-logo" alt="The Fitness Store Logo">
+                <img src="assets/images/LOGO.webp" class="img-logo" alt="The Fitness Store Logo">
             </a>
 
             <!-- MAIN MENU FOR SMALLER DEVICES -->
@@ -508,7 +508,7 @@ try {
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <img src="assets/images/logo.png" class="img"><br />
+                    <img src="assets/images/LOGO.webp" class="img"><br />
                     <i class="fas fa-envelope"></i>
                     <p>TheFitnessStore@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
