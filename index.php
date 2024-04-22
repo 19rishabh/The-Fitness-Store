@@ -412,11 +412,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <img src="assets/images/blog2.webp" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="" target="_blank" class="title text-decoration-none">Carbon Neutral Tea and Coffee</a>
-                                    <span>by Taylors editorial team</span>
-                                    <p>All our tea and coffee is carbon neutral – but what does that actually mean? Here’s an explanation of how we’ve lowered our carbon footprint, and the three projects in Kenya, Malawi and Uganda which have reduced the emissions of our products to...</p>
+                                    <a href="https://www.setforset.com/blogs/news/best-workout-splits" target="_blank" class="title text-decoration-none">THE 5 ALL-TIME BEST WORKOUT SPLITS (WITH FULL ROUTINES)</a>
+                                    <span>By Sam Coleman</span>
+                                    <p>One of the most crucial parts of a lifter's training involves their workout split, which is essential for tracking progress and focusing on goals such as...</p>
                                     <center>
-                                        <a href="" target="_blank" class="btn">Read More</a>
+                                        <a href="https://www.setforset.com/blogs/news/best-workout-splits" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
@@ -427,11 +427,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                                     <img src="assets/images/blog3.webp" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="" target="_blank" class="title text-decoration-none">BEST DRIP COFFEE MAKERS 2020</a>
-                                    <span>by CoffeeStylish.com</span>
-                                    <p>What is a good coffee maker? A good home coffee maker should have removable parts so it can be cleaned completely because you don’t want mold or buildups in your machine. It should be fast. It...</p>
+                                    <a href="https://sweat.com/blogs/fitness/how-to-use-gym-equipment" target="_blank" class="title text-decoration-none">How To Use Gym Equipment</a>
+                                    <span>By Sweat</span>
+                                    <p>o, you've just started training in a gym. Good for you! Maybe you’ve changed your Sweat strength training program to one that uses more equipment and machines, or perhaps...</p>
                                     <center>
-                                        <a href="" target="_blank" class="btn">Read More</a>
+                                        <a href="https://sweat.com/blogs/fitness/how-to-use-gym-equipment" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
