@@ -373,10 +373,10 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog1" alt="">
+                                    <img src="assets/images/blog1.webp" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
+                                    <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
                                     <span>By Steve Kamb </span>
                                     <p>You’re in luck, because I’ve been drinking protein shakes for years and today I’m sharing with you all my secrets...</p>
                                     <center>
@@ -388,14 +388,14 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog2" alt="">
+                                    <img src="assets/images/blog2.webp" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="" target="_blank" class="title text-decoration-none">Carbon Neutral Tea and Coffee</a>
                                     <span>by Taylors editorial team</span>
                                     <p>All our tea and coffee is carbon neutral – but what does that actually mean? Here’s an explanation of how we’ve lowered our carbon footprint, and the three projects in Kenya, Malawi and Uganda which have reduced the emissions of our products to...</p>
                                     <center>
-                                        <a href="https://www.taylorsofharrogate.co.uk/news/carbon-neutral-tea-and-coffee" target="_blank" class="btn">Read More</a>
+                                        <a href="" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
@@ -403,7 +403,7 @@ try {
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog3" alt="">
+                                    <img src="assets/images/blog3.webp" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="" target="_blank" class="title text-decoration-none">BEST DRIP COFFEE MAKERS 2020</a>
