@@ -415,7 +415,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog3.webp" alt="">
+                                    <img src="assets/images/blog3.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="https://sweat.com/blogs/fitness/how-to-use-gym-equipment" target="_blank" class="title text-decoration-none">How To Use Gym Equipment</a>
