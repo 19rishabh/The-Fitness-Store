@@ -56,7 +56,7 @@
                             <a href="#contact" class="text-decoration-none">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="users/logout.php" class="text-decoration-none">Logout</a>
+                            <a href="logout.php" class="text-decoration-none">Logout</a>
                         </li>
                     </ul>
                 </div>
