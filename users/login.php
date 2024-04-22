@@ -10,9 +10,13 @@
 </head>
 <body>
 <?php
-// Replace 'your_postgres_host', 'your_postgres_username', 'your_postgres_password', and 'your_postgres_database' with your PostgreSQL credentials
-$con = pg_connect("host=localhost dbname='GymStore' user=postgres password='Aaditya@1399'");
+// Replace 'your_postgres_database' with your actual PostgreSQL database name
+$dbname = "GymStore";
 
+// Connect to PostgreSQL database
+$con = pg_connect("host=localhost dbname=$dbname user=postgres password=aaditya");
+
+// Check connection
 if (!$con) {
     die("Connection failed: " . pg_last_error());
 }
