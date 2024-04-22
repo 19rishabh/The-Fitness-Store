@@ -4,7 +4,7 @@ $host = 'localhost';
 $port = '5432'; // Default PostgreSQL port
 $dbname = 'GymStore';
 $user = 'postgres';
-$password = 'Aaditya@1399';
+$password = 'aaditya';
 
 // Establish a connection to the PostgreSQL database
 $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";
