@@ -22,8 +22,8 @@ if (isset($_POST['submit'])) {
     $create_datetime = date("Y-m-d H:i:s");
 
     // Insert user data into the database
-    $query = "INSERT INTO users (name, username, password, email, create_datetime)
-              VALUES ('$name', '$username', '$password', '$email', '$create_datetime')";
+    $query = "INSERT INTO users (name, username, email, password, create_datetime)
+              VALUES ('$name', '$username','$email', '$password', '$create_datetime')";
     $result = pg_query($con, $query);
 
     if ($result) {
