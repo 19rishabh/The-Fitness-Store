@@ -1,22 +1,42 @@
 <?php
-// PostgreSQL database credentials
+
 $host = 'localhost';
-$port = '5432'; // Default PostgreSQL port
+$port = '5432';
 $dbname = 'GymStore';
 $user = 'postgres';
 $password = 'aaditya';
 
-// Establish a connection to the PostgreSQL database
+
 $dsn = "pgsql:host=$host;port=$port;dbname=$dbname;user=$user;password=$password";
 try {
     $pdo = new PDO($dsn);
-    // Set PDO to throw exceptions on error
+ 
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "Connected to the PostgreSQL database successfully!";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+
+    try {
+
+        $stmt = $pdo->prepare("INSERT INTO contact_messages (email, message) VALUES (:email, :message)");
+
+        $stmt->bindParam(':email', $email);
+        $stmt->bindParam(':message', $message);
+    
+        $stmt->execute();
+
+        echo "Message sent successfully!";
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -487,23 +507,23 @@ try {
 
         <!-- CONTACT US SECTION -->
         <section class="contact" id="contact">
-            <h1 class="heading"><span>Contact</span> Us</h1>
-            <div class="row">
-                <div id="map" class="map pull-left"></div>
-                <form name="contact" method="POST" action="https://formspree.io/f/xayzavgb">
-                    <h3> Get in touch with us!</h3>
-                    <div class="inputBox">
-                        <span class="fas fa-envelope"></span>
-                        <input type="email" name="email" placeholder="Email Address">
-                    </div>
-                    <div class="inputBox">
-                        <textarea name="message" placeholder="Enter your message..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Contact Now</button>
-                </form>
-            </div>
-        </section>
+                <h1 class="heading"><span>Contact</span> Us</h1>
+                <div class="row">
+                    <div id="map" class="map pull-left"></div>
+                    <form id="contactForm" name="contact" method="POST" action="index.php">
 
+                        <h3> Get in touch with us!</h3>
+                        <div class="inputBox">
+                            <span class="fas fa-envelope"></span>
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="message" placeholder="Enter your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Contact Now</button>
+                    </form>
+                </div>
+            </section>
         <!-- FOOTER SECTION -->
         <section class="footer">
             <div class="footer-container">
@@ -601,12 +621,12 @@ try {
             // CODE FOR THE GOOGLE MAPS API
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    center: {lat: 19.07295, lng: 72.89993},
                     zoom: 9
                 });
 
                 var marker = new google.maps.Marker({
-                    position: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    position: {lat: 19.07295, lng: 72.89993},
                     map: map,
                     title: 'Your Location'
                 });
