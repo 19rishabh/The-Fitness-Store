@@ -1,7 +1,32 @@
 
 <?php
-    //include auth_session.php file on all user panel pages
     include("auth_session.php");
+    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+        $db_connection = pg_connect("host=localhost dbname=GymStore user=postgres password=aaditya");
+    
+        // Check if the connection is successful
+        if (!$db_connection) {
+            die("Connection failed: " . pg_last_error());
+        }
+    
+        // Get the form data
+        $email = $_POST["email"];
+        $message = $_POST["message"];
+    
+        // Insert the data into the database
+        $query = "INSERT INTO contact_messages (email, message) VALUES ($1, $2)";
+        $result = pg_query_params($db_connection, $query, array($email, $message));
+    
+        // Check if the query was successful
+        if ($result) {
+            echo "Message sent successfully!";
+        } else {
+            echo "Error: " . pg_last_error($db_connection);
+        }
+    
+        // Close the database connection
+        pg_close($db_connection);
+    }
 ?>
 
 <!DOCTYPE html>
@@ -473,22 +498,24 @@
 
         <!-- CONTACT US SECTION -->
         <section class="contact" id="contact">
-            <h1 class="heading"><span>Contact</span> Us</h1>
-            <div class="row">
-                <div id="map" class="map pull-left"></div>
-                <form name="contact" method="POST" action="https://formspree.io/f/xayzavgb">
-                    <h3> Get in touch with us!</h3>
-                    <div class="inputBox">
-                        <span class="fas fa-envelope"></span>
-                        <input type="email" name="email" placeholder="Email Address">
-                    </div>
-                    <div class="inputBox">
-                        <textarea name="message" placeholder="Enter your message..."></textarea>
-                    </div>
-                    <button type="submit" class="btn">Contact Now</button>
-                </form>
-            </div>
-        </section>
+                <h1 class="heading"><span>Contact</span> Us</h1>
+                <div class="row">
+                    <div id="map" class="map pull-left"></div>
+                    <form id="contactForm" name="contact" method="POST" action="index.php">
+
+                        <h3> Get in touch with us!</h3>
+                        <div class="inputBox">
+                            <span class="fas fa-envelope"></span>
+                            <input type="email" name="email" placeholder="Email Address">
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="message" placeholder="Enter your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn">Contact Now</button>
+                    </form>
+                </div>
+            </section>
+
 
         <!-- FOOTER SECTION -->
         <section class="footer">
@@ -587,12 +614,12 @@
             // CODE FOR THE GOOGLE MAPS API
             function initMap() {
                 var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    center: {lat: 19.07295, lng: 72.89993},
                     zoom: 9
                 });
 
                 var marker = new google.maps.Marker({
-                    position: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    position: {lat: 19.07295, lng: 72.89993},
                     map: map,
                     title: 'Your Location'
                 });
