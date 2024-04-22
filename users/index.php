@@ -1,3 +1,4 @@
+
 <?php
     //include auth_session.php file on all user panel pages
     include("auth_session.php");
@@ -22,14 +23,15 @@
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/convo.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- font awesome cdn link -->
-        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"><!-- Favicon / Icon -->
+        <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"><!-- Favicon / Icon -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Google font cdn link -->
     </head>
+
     <body>
         <!-- HEADER SECTION -->
         <header class="header">
             <a href="#" class="logo">
-            <img src="../assets/images/logoo.php" class="img-logo" alt="The Fitness Store">
+                <img src="../assets/images/logo.png" class="img-logo" alt="The Fitness Store Logo">
             </a>
 
             <!-- MAIN MENU FOR SMALLER DEVICES -->
@@ -42,17 +44,19 @@
                             <a href="#about" class="text-decoration-none">About</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#menu" class="text-decoration-none">Menu</a>
+                            <a href="#menu" class="text-decoration-none">Products</a>
                         </li>
                         <li class="nav-item">
                             <a href="#gallery"class="text-decoration-none">Gallery</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a href="#blogs" class="text-decoration-none">Blogs</a>
+                        </li>
                         <li class="nav-item">
                             <a href="#contact" class="text-decoration-none">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a href="logout.php" class="text-decoration-none">Logout</a>
+                            <a href="users/logout.php" class="text-decoration-none">Logout</a>
                         </li>
                     </ul>
                 </div>
@@ -62,7 +66,6 @@
                 <div class="fas fa-shopping-cart" id="cart-btn" onclick="redirectCart()"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
-
 
             <!-- SEARCH TEXT BOX -->
             <div class="search-form">
@@ -78,7 +81,7 @@
                 </div>
                 <div class="total">
                     <div class="total-title">Total: </div>
-                    <div class="total-price">Rs0</div>
+                    <div class="total-price">Rs.</div>
                 </div>
                 <!-- BUY BUTTON -->
                 <button type="button" class="btn-buy">Checkout Now</button>
@@ -88,7 +91,7 @@
         <!-- HERO SECTION -->
         <section class="home" id="home">
             <div class="content">
-                <h3>Welcome to The Fitness Store <?php echo $_SESSION['username']; ?>!</h3>
+                <h3>Welcome to The Fitness Store!</h3>
                 <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
             </div>
         </section>
@@ -101,12 +104,12 @@
                 <img src="../assets/images/hero.webp" class="img-hero" alt="Hero Image">
                 </div>
                 <div class="content">
-                    <h3>Welcome to The Fitness Store!</h3>
+                <h3>Welcome to The Fitness Store!</h3>
                     <p>
-                    At The Fitness Store, we are dedicated to empowering fitness enthusiasts on their journey to wellness. Our mission is to provide a comprehensive online platform that serves as a haven for fitness aficionados, offering a wide array of top-notch gym equipment, premium fitness products, stylish workout attire, and essential supplements like protein shakes.
+                    At The Fitness Store, we are dedicated to empowering fitness enthusiasts on their journey to wellness. Our mission is to provide a comprehensive platform that serves as a haven for fitness aficionados, offering a wide array of top-notch gym equipment, premium fitness products, stylish workout attire, and essential supplements like protein shakes.
                     </p>
                     <p>
-                    Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.
+                    Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.
                     </p>
                     <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
                 </div>
@@ -121,7 +124,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/Tanktops.webp" alt="Tanktops">
+                            <img src="../assets/images/Tanktops.webp" alt="Tanktops" class="product-img">
                                 <h3 class="product-title">MALE TANKTOPS</h3>
                                 <div class="price">Rs.450.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -181,7 +184,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/resistance.webp" alt="Resistance Bands">
+                                <img src="../assets/images/resistance.webp" alt="Resistance Bands">
                                 <h3 class="product-title">RESISTANCE BANDS</h3>
                                 <div class="price">Rs 585.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -229,8 +232,8 @@
             </div>
         </section>
 
-         <!-- GALLERY SECTION -->
-         <section class="gallery" id="gallery">
+        <!-- GALLERY SECTION -->
+        <section class="gallery" id="gallery">
             <h1 class="heading">The <span>Gallery</span></h1>
             <div class="box-container">
                 <div class="container">
@@ -238,7 +241,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-1.webp" alt="Review 1">
+                                    <img src="../assets/images/gallery1.jpg" alt="gallery1">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -255,7 +258,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-5.webp" alt="Review 5">
+                                    <img src="../assets/images/gallery2.jpg" alt="gallery2">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -272,7 +275,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-3.webp" alt="Review 3">
+                                    <img src="../assets/images/gallery3.jpg" alt="gallery3">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -291,7 +294,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-4.webp" alt="Review 4">
+                                    <img src="../assets/images/gallery4.jpg" alt="gallery4">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -308,7 +311,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-6.webp" alt="Review 6">
+                                    <img src="../assets/images/gallery5.jpg" alt="gallery5">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -325,7 +328,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                <img src="../assets/images/Review-8.webp" alt="Review 8">
+                                    <img src="../assets/images/gallery6.jpg" alt="gallery6">
                                 </div>
                                 <div class="content">
                                     <div class="stars">
@@ -359,11 +362,11 @@
                                     <img src="../assets/images/pour.jpg" alt="">
                                 </div>
                                 <div class="content">
-                                    <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="title text-decoration-none">Batch Brew vs. Pour Over | The Pros and Cons Experienced by Coffee Professionals</a>
-                                    <span>by The Way to Coffee</span>
-                                    <p>Thinking back 15-20 years, I remember my parents going about their morning ritual of brewing coffee on weekends before burying...</p>
+                                    <a href="" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
+                                    <span>By </span>
+                                    <p>You’re in luck, because I’ve been drinking protein shakes for years and today I’m sharing with you all my secrets...</p>
                                     <center>
-                                        <a href="https://www.thewaytocoffee.com/batch-brew-vs-pour-over/" target="_blank" class="btn">Read More</a>
+                                    <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="btn">Read More</a>
                                     </center>
                                 </div>
                             </div>
@@ -403,71 +406,70 @@
             </div>
         </section>
 
-        <!-- Testimonials SECTION -->
-<section class="review" id="review">
-    <h1 class="heading"><span>Testimonials</span></h1>
-    <div class="box-container">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="../assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            I've been shopping at The Fitness Store for all my workout needs, and I couldn't be happier with their service! 
+        <!-- TESTIMONIALS SECTION -->
+        <section class="review" id="review">
+            <h1 class="heading"><span>Testimonials</span></h1>
+            <div class="box-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="../assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                I've been shopping at The Fitness Store for all my workout needs, and I couldn't be happier with their service! 
                             Their range of products is extensive, and the quality is top-notch. Highly recommended!
-                        </p>
-                        <img src="../assets/images/pic-1.png" alt="" class="user">
-                        <h3>Jane Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="../assets/images/pic-1.png" alt="" class="user">
+                                <h3>Jane Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="../assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            As a fitness enthusiast, I've tried numerous online stores, but The Fitness Store stands out for its exceptional 
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="../assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                As a fitness enthusiast, I've tried numerous online stores, but The Fitness Store stands out for its exceptional 
                             customer service and speedy delivery. Plus, their selection of supplements is fantastic!
-                        </p>
-                        <img src="../assets/images/pic-2.png" alt="" class="user">
-                        <h3>John Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="../assets/images/pic-2.png" alt="" class="user">
+                                <h3>John Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="box">
-                        <img src="../assets/images/quote-img.png" alt="" class="quote">
-                        <p>
-                            The Fitness Store is my go-to destination for all my fitness apparel needs. Their collection is trendy, 
+                        <div class="col-md-4">
+                            <div class="box">
+                                <img src="../assets/images/quote-img.png" alt="" class="quote">
+                                <p>
+                                The Fitness Store is my go-to destination for all my fitness apparel needs. Their collection is trendy, 
                             comfortable, and affordable. Plus, their website is easy to navigate, making shopping a breeze!
-                        </p>
-                        <img src="../assets/images/pic-3.png" alt="" class="user">
-                        <h3>Jane Doe</h3>
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
+                                </p>
+                                <img src="../assets/images/pic-3.png" alt="" class="user">
+                                <h3>Jane Doe</h3>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </div>  
             </div>
-        </div>  
-    </div>
-</section>
-
+        </section>
 
         <!-- CONTACT US SECTION -->
         <section class="contact" id="contact">
@@ -492,7 +494,7 @@
         <section class="footer">
             <div class="footer-container">
                 <div class="logo">
-                <img src="../assets/images/logoo.php" class="img-logo" alt="The Fitness Store">
+                    <img src="../assets/images/logo.png" class="img"><br />
                     <i class="fas fa-envelope"></i>
                     <p>TheFitnessStore@gmail.com</p><br />
                     <i class="fas fa-phone"></i>
@@ -505,7 +507,7 @@
                     <br /> 
                     <a href="#">Contact Us</a>
                     <a href="#">Customer Service</a>
-                
+                    <a href="#">Chatbot Inquiry</a>
                     <a href="#">Submit a Ticket</a>
                 </div>
                 <div class="company">
@@ -529,7 +531,6 @@
                 <div class="credit">
                     <hr /><br/>
                     <h2>The Fitness Store © 2023 | All Rights Reserved.</h2>
-            
                 </div>
             </div>
         </section>
@@ -571,8 +572,8 @@
         </div>
 
         <!-- JS File Link -->
-        <script src="../assets/js/responses.js"></script>
-        <script src="../assets/js/convo.js"></script>
+        <script src="assets/js/responses.js"></script>
+        <script src="assets/js/convo.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
         <script>
