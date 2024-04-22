@@ -120,10 +120,10 @@ try {
                 <div class="content">
                 <h3>Welcome to The Fitness Store!</h3>
                     <p>
-                    At The Fitness Store, we are dedicated to empowering fitness enthusiasts on their journey to wellness. Our mission is to provide a comprehensive online platform that serves as a haven for fitness aficionados, offering a wide array of top-notch gym equipment, premium fitness products, stylish workout attire, and essential supplements like protein shakes.
+                    At The Fitness Store, we are dedicated to empowering fitness enthusiasts on their journey to wellness. Our mission is to provide a comprehensive platform that serves as a haven for fitness aficionados, offering a wide array of top-notch gym equipment, premium fitness products, stylish workout attire, and essential supplements like protein shakes.
                     </p>
                     <p>
-                    Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.
+                    Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.
                     </p>
                     <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
                 </div>
