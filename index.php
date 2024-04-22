@@ -51,7 +51,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Hhh_14Uam62GXGaTMcXWhhVkYg0EbDY&callback=initMap" async defer></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
+
 
         <!-- Custom CSS File Link -->
         <link rel="stylesheet" href="assets/css/style.css">
@@ -509,7 +510,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         <section class="contact" id="contact">
                 <h1 class="heading"><span>Contact</span> Us</h1>
                 <div class="row">
-                    <div id="map" class="map pull-left"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3770.7926506302797!2d72.89735127593626!3d19.07285205206993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c627a20bcaa9%3A0xb2fd3bcfeac0052a!2sK.%20J.%20Somaiya%20College%20of%20Engineering!5e0!3m2!1sen!2sin!4v1711996533423!5m2!1sen!2sin" width="300" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
                     <form id="contactForm" name="contact" method="POST" action="index.php">
 
                         <h3> Get in touch with us!</h3>
@@ -618,19 +620,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             }
 
-            // CODE FOR THE GOOGLE MAPS API
-            function initMap() {
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    center: {lat: 19.07295, lng: 72.89993},
-                    zoom: 9
-                });
+            
 
-                var marker = new google.maps.Marker({
-                    position: {lat: 19.07295, lng: 72.89993},
-                    map: map,
-                    title: 'Your Location'
-                });
-            }
 
             // CODE FOR THE SHOW MORE & SHOW LESS BUTTON IN MENU
             $(document).ready(function() {
