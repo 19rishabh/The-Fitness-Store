@@ -132,7 +132,7 @@ try {
 
         <!-- MENU SECTION -->
         <section class="menu" id="menu">
-            <h1 class="heading">Our <span>Menu</span></h1>
+            <h1 class="heading">Our <span>Products</span></h1>
             <div class="box-container">
                 <div class="container">
                     <div class="row">
@@ -422,7 +422,7 @@ try {
 
         <!-- TESTIMONIALS SECTION -->
         <section class="review" id="review">
-            <h1 class="heading"><span>Testimo</span>nials</h1>
+            <h1 class="heading"><span>Testimonials</span></h1>
             <div class="box-container">
                 <div class="container">
                     <div class="row">
