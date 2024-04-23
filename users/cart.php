@@ -1,22 +1,34 @@
 <?php
-// Establish connection to the database
-include 'db.php';
+    include 'db.php'; 
 
-// Get data sent from AJAX
-$data = json_decode(file_get_contents("php://input"), true);
+    // Check if data is received via POST
+    if ($_SERVER["REQUEST_METHOD"] === "POST") {
+        // Get data sent from AJAX
+        $data = json_decode(file_get_contents("php://input"), true);
 
-$currentDate = date('Y-m-d');
+        // Check if data is successfully decoded
+        if ($data !== null) {
+            $currentDate = date('Y-m-d');
 
-// Insert data into database
-foreach ($data as $item) {
-    $title = $item["title"];
-    $price = $item["price"];
-    $quantity = $item["quantity"];
-    $total = $item["total"];
-    $sql = "INSERT INTO cart (title, price, quantity, total, date_created) VALUES ('$title', '$price', '$quantity', '$total', '$currentDate')";
-    $conn->query($sql);
-}
+            // Insert data into database
+            foreach ($data as $item) {
+                $title = pg_escape_string($item["title"]);
+                $price = $item["price"];
+                $quantity = $item["quantity"];
+                $total = $item["total"];
+                $sql = "INSERT INTO cart (title, price, quantity, total, date_created) VALUES ('$title', '$price', '$quantity', '$total', '$currentDate')";
+                $result = pg_query($db, $sql);
+                if (!$result) {
+                    echo "Error: " . pg_last_error($db);
+                }
+            }
 
-// Close connection
-$conn->close();
+            // Close connection
+            pg_close($db);
+        } else {
+            echo "Error decoding JSON: " . json_last_error_msg();
+        }
+    } else {
+        echo "Invalid request method";
+    }
 ?>
