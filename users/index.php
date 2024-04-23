@@ -81,6 +81,9 @@
                         <li class="nav-item">
                             <a href="logout.php" class="text-decoration-none">Logout</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="users/wordcloud.php" class="text-decoration-none">Reviews</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
