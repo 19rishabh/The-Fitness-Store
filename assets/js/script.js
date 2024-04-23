@@ -75,22 +75,19 @@ function ready() {
 }
 
 // Function for "Buy Button Works"
+
 function buyButtonClicked() {
-    alert('Your order is placed! Thank you for buying and enjoy your purchase!');
+    alert('Thank you for purchasing!');
     var cartContent = document.getElementsByClassName("cart-content")[0];
     var cartBoxes = cartContent.getElementsByClassName("cart-box");
     var orderDetails = [];
-
-    // Generate invoice number
     var invoiceNumber = generateInvoiceNumber();
-
-    // Loop through all cart boxes to get details
     for (var i = 0; i < cartBoxes.length; i++) {
         var cartBox = cartBoxes[i];
         var title = cartBox.getElementsByClassName("cart-product-title")[0].innerText;
         var price = cartBox.getElementsByClassName("cart-price")[0].innerText;
         var quantity = cartBox.getElementsByClassName("cart-quantity")[0].value;
-        var priceValue = parseFloat(price.replace('₱', '').replace(',', ''));
+        var priceValue = parseFloat(price.replace('Rs.', '').replace(',', ''));
         var subtotalAmount = priceValue * quantity;
         orderDetails.push({ title: title, price: priceValue, quantity: quantity, subtotal_amount: subtotalAmount, invoice_number: invoiceNumber });    
     }
@@ -113,6 +110,7 @@ function buyButtonClicked() {
     }
     updateTotal();
 }
+
 
 // Function to generate invoice number
 function generateInvoiceNumber() {
