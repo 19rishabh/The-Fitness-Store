@@ -1,4 +1,3 @@
-
 <?php
     include("auth_session.php");
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -42,17 +41,15 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" defer></script>
-
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2Hhh_14Uam62GXGaTMcXWhhVkYg0EbDY&callback=initMap" async defer></script>
 
         <!-- Custom CSS File Link -->
         <link rel="stylesheet" href="../assets/css/style.css">
         <link rel="stylesheet" href="../assets/css/convo.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"><!-- font awesome cdn link -->
-        <link rel="icon" type="image/x-icon" href="assets/images/LOGO.webp"><!-- Favicon / Icon -->
+        <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"><!-- Favicon / Icon -->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"><!-- Google font cdn link -->
     </head>
-
     <body>
         <!-- HEADER SECTION -->
         <header class="header">
@@ -89,7 +86,7 @@
             </nav>
             <div class="icons">
                 <div class="fas fa-search" id="search-btn"></div>
-                <div class="fas fa-shopping-cart" id="cart-btn" onclick="redirectCart()"></div>
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
                 <div class="fas fa-bars" id="menu-btn"></div>
             </div>
 
@@ -107,7 +104,7 @@
                 </div>
                 <div class="total">
                     <div class="total-title">Total: </div>
-                    <div class="total-price">Rs.</div>
+                    <div class="total-price">₱0</div>
                 </div>
                 <!-- BUY BUTTON -->
                 <button type="button" class="btn-buy">Checkout Now</button>
@@ -143,43 +140,44 @@
         </section>
 
         <!-- MENU SECTION -->
-        <section class="menu" id="menu">
-            <h1 class="heading">Our <span>Products</span></h1>
-            <div class="box-container">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                            <img src="../assets/images/Tanktops.webp" alt="Tanktops" class="product-img">
-                                <h3 class="product-title">MALE TANKTOPS</h3>
-                                <div class="price">Rs.450.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                            <img src="../assets/images/MuscleTech.webp" alt="MuscleTech" class="product-img">
-                                <h3 class="product-title">MUSCLETECH SUPPLEMENT</h3>
-                                <div class="price">Rs. 900.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
-                            </div>
-                        </div><br />
-                        <div class="col-md-4">
-                            <div class="box">
-                            <img src="../assets/images/FemaleT.webp" alt="FemaleT" class="product-img">
-                                <h3 class="product-title">WOMEN T-SHIRT</h3>
-                                <div class="price">Rs.450.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
-                            </div>
-                        </div>
-                    </div><br />
-                    <div class="row">
-                        <div class="col-md-4">
+        
+<section class="menu" id="menu">
+    <h1 class="heading">Our <span>Products</span></h1>
+    <div class="box-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="../assets/images/Tanktops.webp" alt="Tanktops" class="product-img">
+                        <h3 class="product-title">MALE TANKTOPS</h3>
+                        <div class="price">Rs.450.00</div>
+                        <a class="btn add-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="../assets/images/MuscleTech.webp" alt="MuscleTech" class="product-img">
+                        <h3 class="product-title">MUSCLETECH SUPPLEMENT</h3>
+                        <div class="price">Rs. 900.00</div>
+                        <a class="btn add-cart">Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="../assets/images/FemaleT.webp" alt="FemaleT" class="product-img">
+                        <h3 class="product-title">WOMEN T-SHIRT</h3>
+                        <div class="price">Rs.450.00</div>
+                        <a class="btn add-cart">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row row-to-hide">
+            <div class="col-md-4">
                             <div class="box">
                             <img src="../assets/images/Dumbells.webp" alt="Dumbells" class="product-img">
                                 <h3 class="product-title">ADJUSTABLE DUMBELLS</h3>
                                 <div class="price">Rs 750.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
@@ -187,7 +185,7 @@
                             <img src="../assets/images/GymBag.webp" alt="GymBag" class="product-img">
                                 <h3 class="product-title">GYMBAG</h3>
                                 <div class="price">Rs 300.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
@@ -195,7 +193,7 @@
                             <img src="../assets/images/Whey.webp" alt="Whey" class="product-img">
                                 <h3 class="product-title">WHEY PROTEIN</h3>
                                 <div class="price">Rs 1055.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div><br />
@@ -205,15 +203,15 @@
                             <img src="../assets/images/PreWorkout.webp" alt="PreWorkout" class="product-img">
                                 <h3 class="product-title">PREWORKOUT</h3>
                                 <div class="price">Rs 835.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="../assets/images/resistance.webp" alt="Resistance Bands"class="product-img">
+                            <img src="../assets/images/resistance.webp" alt="Resistance Bands" class="product-img">
                                 <h3 class="product-title">RESISTANCE BANDS</h3>
                                 <div class="price">Rs 585.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div><br />
                         <div class="col-md-4">
@@ -221,45 +219,42 @@
                             <img src="../assets/images/kettlebells.webp" alt="Kettlebells" class="product-img">
                                 <h3 class="product-title">KETTLEBELLS</h3>
                                 <div class="price">Rs. 680.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
-                        </div>
-                    </div><br />
-                    <div class="row row-to-hide">
-                        <div class="col-md-4">
+                            <div class="col-md-4">
                             <div class="box">
                             <img src="../assets/images/BoySet.webp" alt="Boy Set" class="product-img">
                                 <h3 class="product-title">BOYS SET</h3>
                                 <div class="price">Rs 950.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
-                        </div><br />
-                        <div class="col-md-4">
+                            <div class="col-md-4">
                             <div class="box">
                             <img src="../assets/images/WomenWear.webp" alt="Women's Wear" class="product-img">
                                 <h3 class="product-title">WOMEN SET</h3>
                                 <div class="price">Rs. 635.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
-                        </div><br />
-                        <div class="col-md-4">
+                            <div class="col-md-4">
                             <div class="box">
                             <img src="../assets/images/BCCA.webp" alt="Branched-Chain Amino Acids (BCAA)" class="product-img">
                                 <h3 class="product-title">BCCA SUPPLEMENT</h3>
                                 <div class="price">Rs. 955.00</div>
-                                <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
+                                <a class="btn add-cart">Add to Cart</a>
                             </div>
                         </div>
                     </div><br />
-                    <center>
-                        <button id="showHideBtn" class="btn btn-dark">SHOW MORE</button>
-                    </center> 
-                </div>
             </div>
-        </section>
+            <center>
+                <button id="showHideBtn" class="btn btn-dark">SHOW MORE</button>
+            </center>
+        </div>
+    </div>
+</section>
 
-        <!-- GALLERY SECTION -->
-        <section class="gallery" id="gallery">
+
+         <!-- GALLERY SECTION -->
+         <section class="gallery" id="gallery">
             <h1 class="heading">The <span>Gallery</span></h1>
             <div class="box-container">
                 <div class="container">
@@ -606,8 +601,9 @@
                 </div>
             </div>
         </div>
-
         <!-- JS File Link -->
+        <script src="../assets/js/googleSignIn.js"></script>
+        <script src="../assets/js/script.js"></script>
         <script src="../assets/js/responses.js"></script>
         <script src="../assets/js/convo.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -618,6 +614,20 @@
                 for(const form of document.getElementsByTagName('form')) {
                     form.reset();
                 }
+            }
+
+            // CODE FOR THE GOOGLE MAPS API
+            function initMap() {
+                var map = new google.maps.Map(document.getElementById('map'), {
+                    center: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    zoom: 9
+                });
+
+                var marker = new google.maps.Marker({
+                    position: {lat: 14.99367271992383, lng: 120.17629231186626},
+                    map: map,
+                    title: 'Your Location'
+                });
             }
 
             // CODE FOR THE SHOW MORE & SHOW LESS BUTTON IN MENU
@@ -647,7 +657,6 @@
                     }
                 });
             });
-
             // CODE FOR THE REDIRECT CART
             function redirectCart() {
                 // Check if the user is logged in
