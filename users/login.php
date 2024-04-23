@@ -5,7 +5,7 @@
     <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <title>The Fitness Store| Login Form</title>
     <link rel="stylesheet" href="../assets/css/login.css"/>
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.ico"><!-- Favicon / Icon -->
+    <link rel="icon" type="image/x-icon" href="../assets/images/LOGO.webp"><!-- Favicon / Icon -->
     <script src="https://accounts.google.com/gsi/client" async defer></script>
 </head>
 <body>
@@ -46,7 +46,7 @@ if (isset($_POST['username'])) {
     ?>
     <form class="form" method="post" name="login">
         <center>
-            <img src="../assets/images/logo.png" alt="" class="img img-fluid">
+            <img src="../assets/images/LOGO.webp" alt="" class="img img-fluid">
         </center>
         <hr />
         <h1 class="login-title">Login</h1>
