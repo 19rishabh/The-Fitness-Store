@@ -93,6 +93,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         <li class="nav-item">
                             <a href="users/login.php" class="text-decoration-none">Login</a>
                         </li>
+                        <li class="nav-item">
+                            <a href="users/wordcloud.php" class="text-decoration-none">Reviews</a>
+                        </li>
                     </ul>
                 </div>
             </nav>
