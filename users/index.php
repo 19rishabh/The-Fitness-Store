@@ -174,7 +174,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row row-to-hide">
+            <div class="row">
             <div class="col-md-4">
                             <div class="box">
                             <img src="../assets/images/Dumbells.webp" alt="Dumbells" class="product-img">
