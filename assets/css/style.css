@@ -72,8 +72,8 @@ section {
 }
 
 .img-logo {
-    width: 100px;
-    height: 100px;
+    width: 70px;
+    height: 70px;
 }
 
 .header .navbar a {
@@ -356,11 +356,11 @@ section {
 }
 
 .about .row .image {
-    flex: 1 1 45rem;
+    flex: 1 1 35rem;
 }
 
 .about .row .image img {
-    width: 100%;
+    width: 75%;
 }
 
 .about .row .content {
@@ -447,8 +447,9 @@ section {
 }
 
 .gallery .box-container .box img {
-    width: 200px;
-    height: 250px;
+    width: 210px;
+    height: 260px;
+    object-fit: cover;
 }
 
 .gallery .box-container .box .content h3 {
@@ -468,7 +469,6 @@ section {
 
 /* BLOGS SECTION */
 
-
 .blogs .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -477,6 +477,8 @@ section {
 
 .blogs .box-container .box {
     border: var(--border);
+    height:600px;
+    
 }
 
 .blogs .box-container .box .image {
@@ -569,15 +571,17 @@ section {
 
 .contact .row {
     display: flex;
-    background-color: var(--black);
+    justify-content: center; 
+    align-items: center; 
     flex-wrap: wrap;
     gap: 1rem;
+    margin: 0 auto; 
 }
 
+
 .contact .row .map {
-    flex: 1 1 45rem;
-    width: 100%;
-    object-fit: cover;
+    flex: 1 1 45%;
+    max-width: 50%;
 }
 
 #map {
@@ -586,9 +590,10 @@ section {
 }
 
 .contact .row form {
-    flex: 1 1 45rem;
+    flex: 1 1 45%;
     padding: 5rem 2rem;
     text-align: center;
+    max-width: 50%;
 }
 
 .contact .row form h3 {
@@ -631,8 +636,8 @@ section {
     background: none;
 }
 
-/* FOOTER SECTION */
 
+/* FOOTER SECTION */
 
 .footer {
     background-color: var(--black);
@@ -647,8 +652,8 @@ section {
 }
 
 .footer .logo img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     display: block;
     margin: 0 auto;
 }
@@ -727,7 +732,7 @@ section {
     position: relative;
 }
 
-.fas.fa-paper-plane {
+.input-wrapper .fas.fa-paper-plane {
     position: absolute;
     top: 50%;
     right: 20px;
