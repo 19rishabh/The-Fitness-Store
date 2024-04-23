@@ -158,7 +158,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/MuscleTech.webp" alt="MuscleTech">
+                            <img src="../assets/images/MuscleTech.webp" alt="MuscleTech" class="product-img">
                                 <h3 class="product-title">MUSCLETECH SUPPLEMENT</h3>
                                 <div class="price">Rs. 900.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -166,7 +166,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/FemaleT.webp" alt="FemaleT">
+                            <img src="../assets/images/FemaleT.webp" alt="FemaleT" class="product-img">
                                 <h3 class="product-title">WOMEN T-SHIRT</h3>
                                 <div class="price">Rs.450.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -176,7 +176,7 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/Dumbells.webp" alt="Dumbells">
+                            <img src="../assets/images/Dumbells.webp" alt="Dumbells" class="product-img">
                                 <h3 class="product-title">ADJUSTABLE DUMBELLS</h3>
                                 <div class="price">Rs 750.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -184,7 +184,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/GymBag.webp" alt="GymBag">
+                            <img src="../assets/images/GymBag.webp" alt="GymBag" class="product-img">
                                 <h3 class="product-title">GYMBAG</h3>
                                 <div class="price">Rs 300.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -192,7 +192,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/Whey.webp" alt="Whey">
+                            <img src="../assets/images/Whey.webp" alt="Whey" class="product-img">
                                 <h3 class="product-title">WHEY PROTEIN</h3>
                                 <div class="price">Rs 1055.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -202,7 +202,7 @@
                     <div class="row row-to-hide">
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/PreWorkout.webp" alt="PreWorkout">
+                            <img src="../assets/images/PreWorkout.webp" alt="PreWorkout" class="product-img">
                                 <h3 class="product-title">PREWORKOUT</h3>
                                 <div class="price">Rs 835.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -210,7 +210,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="../assets/images/resistance.webp" alt="Resistance Bands">
+                                <img src="../assets/images/resistance.webp" alt="Resistance Bands"class="product-img">
                                 <h3 class="product-title">RESISTANCE BANDS</h3>
                                 <div class="price">Rs 585.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -218,7 +218,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/kettlebells.webp" alt="Kettlebells">
+                            <img src="../assets/images/kettlebells.webp" alt="Kettlebells" class="product-img">
                                 <h3 class="product-title">KETTLEBELLS</h3>
                                 <div class="price">Rs. 680.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -228,7 +228,7 @@
                     <div class="row row-to-hide">
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/BoySet.webp" alt="Boy Set">
+                            <img src="../assets/images/BoySet.webp" alt="Boy Set" class="product-img">
                                 <h3 class="product-title">BOYS SET</h3>
                                 <div class="price">Rs 950.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -236,7 +236,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/WomenWear.webp" alt="Women's Wear">
+                            <img src="../assets/images/WomenWear.webp" alt="Women's Wear" class="product-img">
                                 <h3 class="product-title">WOMEN SET</h3>
                                 <div class="price">Rs. 635.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
@@ -244,7 +244,7 @@
                         </div><br />
                         <div class="col-md-4">
                             <div class="box">
-                            <img src="../assets/images/BCCA.webp" alt="Branched-Chain Amino Acids (BCAA)">
+                            <img src="../assets/images/BCCA.webp" alt="Branched-Chain Amino Acids (BCAA)" class="product-img">
                                 <h3 class="product-title">BCCA SUPPLEMENT</h3>
                                 <div class="price">Rs. 955.00</div>
                                 <a class="btn add-cart" onclick="redirectCart()">Add to Cart</a>
