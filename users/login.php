@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-// Replace 'your_postgres_database' with your actual PostgreSQL database name
+
 $dbname = "GymStore";
 
 // Connect to PostgreSQL database
