@@ -6,7 +6,7 @@ function getBotResponse(input) {
         return "Hi there! What can I do for you?";
     } else if (input == "commands") {
         return "Keywords/Commands: <br/><br/> <strong>Products</strong> - it will show our Products. <br/> <strong>about</strong> - it will show the 'about us'. <br/> <strong>contact</strong>- it will show 'contact info'. <br/> <strong>commands</strong> - it will show 'keyword'. <br/> <strong>how to order</strong> - it will show the instruction. <br/> <strong>location</strong> - it will show our address.";
-    } else if (input == "Product") {
+    } else if (input == "Products") {
         return "Here's our product: <br /><br /> MALE TANKTOPS - Rs. 450.00 <br /> MUSCLETECH SUPPLEMENT - Rs. 900.00 <br /> WOMEN T-SHIRT - Rs. 450.00 <br /> ADJUSTABLE DUMBELLS - Rs. 750.00 <br /> GYMBAG - Rs. 300.00 <br /> WHEY PROTEIN - Rs. 1055.00 <br /> PREWORKOUT - Rs. 835.00 <br /> RESISTANCE BANDS - Rs. 585.00 <br /> KETTLEBELLS - Rs. 680.00 <br /> BOYS SET - Rs. 950.00 <br /> WOMEN SET - Rs. 635.00 <br /> BCCA SUPPLEMENT - Rs. 955.00";
     } else if (input == "about") {
         return "Hi there! <br /><br /> <strong>The Fitness Store Outlet</strong> is a gym shop situated in Vidyavihar";
