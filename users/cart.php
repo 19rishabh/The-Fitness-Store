@@ -17,14 +17,14 @@
                 $quantity = $item["quantity"];
                 $total = $item["total"];
                 $sql = "INSERT INTO cart (title, price, quantity, total, date_created) VALUES ('$title', '$price', '$quantity', '$total', '$currentDate')";
-                $result = pg_query($db, $sql);
+                $result = pg_query($con, $sql);
                 if (!$result) {
-                    echo "Error: " . pg_last_error($db);
+                    echo "Error: " . pg_last_error($con);
                 }
             }
 
             // Close connection
-            pg_close($db);
+            pg_close($con);
         } else {
             echo "Error decoding JSON: " . json_last_error_msg();
         }
