@@ -385,7 +385,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog1.webp" alt="">
+                                    <img src="../assets/images/blog1.webp" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="https://www.nerdfitness.com/blog/protein-shakes-for-newbies-what-to-buy-when-to-drink/" target="_blank" class="title text-decoration-none">The Ultimate Protein Shake Guide | When To Drink, What To Buy, And Best Recipes</a>
@@ -400,7 +400,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog2.webp" alt="">
+                                    <img src="../assets/images/blog2.webp" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="https://www.setforset.com/blogs/news/best-workout-splits" target="_blank" class="title text-decoration-none">THE 5 ALL-TIME BEST WORKOUT SPLITS (WITH FULL ROUTINES)</a>
@@ -415,7 +415,7 @@
                         <div class="col-md-4">
                             <div class="box">
                                 <div class="image">
-                                    <img src="assets/images/blog3.jpg" alt="">
+                                    <img src="../assets/images/blog3.jpg" alt="">
                                 </div>
                                 <div class="content">
                                     <a href="https://sweat.com/blogs/fitness/how-to-use-gym-equipment" target="_blank" class="title text-decoration-none">How To Use Gym Equipment</a>
@@ -526,7 +526,7 @@
         <section class="footer">
             <div class="footer-container">
                <div class="logo">
-              <img src="assets/images/LOGO.webp" class="img"><br />
+              <img src="../assets/images/LOGO.webp" class="img"><br />
               <a href="mailto:TheFitnessStore@gmail.com">
               <i class="fas fa-envelope"></i>
               <p>TheFitnessStore@gmail.com</p>
