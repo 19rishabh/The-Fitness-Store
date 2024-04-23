@@ -137,7 +137,7 @@
                     <p>
                     Our platform isn't just about selling products; it's about building a vibrant community of like-minded individuals. Integrated discussion forums will enable users to connect, share their fitness experiences, seek advice, and inspire one another on their fitness odyssey.
                     </p>
-                    <a href="#" class="btn btn-dark text-decoration-none">Learn More</a>
+                    <a href="#menu" class="btn btn-dark text-decoration-none">Order Now!</a>
                 </div>
             </div>
         </section>
@@ -405,7 +405,7 @@
                                 <div class="content">
                                     <a href="https://www.setforset.com/blogs/news/best-workout-splits" target="_blank" class="title text-decoration-none">THE 5 ALL-TIME BEST WORKOUT SPLITS (WITH FULL ROUTINES)</a>
                                     <span>By Sam Coleman</span>
-                                    <p>One of the most crucial parts of a lifter's training involves their workout split, which is essential for tracking progress and focusing on goals such as...</p>
+                                    <p>One of the most crucial parts of a lifter's training involves their workout split, which is essential for tracking progress and...</p>
                                     <center>
                                         <a href="https://www.setforset.com/blogs/news/best-workout-splits" target="_blank" class="btn">Read More</a>
                                     </center>
@@ -525,32 +525,36 @@
         <!-- FOOTER SECTION -->
         <section class="footer">
             <div class="footer-container">
-                <div class="logo">
-                    <img src="../assets/images/LOGO.webp" class="img"><br />
-                    <i class="fas fa-envelope"></i>
-                    <p>TheFitnessStore@gmail.com</p><br />
-                    <i class="fas fa-phone"></i>
-                    <p>+91 9869461489</p><br />
-                    <i class="fab fa-facebook-messenger"></i>
-                    <p>@TheFitnessStore</p><br />
-                </div>
-                <div class="support">
+               <div class="logo">
+              <img src="assets/images/LOGO.webp" class="img"><br />
+              <a href="mailto:TheFitnessStore@gmail.com">
+              <i class="fas fa-envelope"></i>
+              <p>TheFitnessStore@gmail.com</p>
+              </a><br />
+              <a href="tel:+919869461489">
+              <i class="fas fa-phone"></i>
+              <p>+91 9869461489</p>
+              </a><br />
+              <i class="fab fa-facebook-messenger"></i>
+              <p>@TheFitnessStore</p><br />
+            </div>
+
+             <div class="support">
                     <h2>Support</h2>
                     <br /> 
-                    <a href="#">Contact Us</a>
-                    <a href="#">Customer Service</a>
+                    <a href="#contact">Contact Us</a>
                     <a href="#">Chatbot Inquiry</a>
-                    <a href="#">Submit a Ticket</a>
+                    <a href="#">FAQ</a>
                 </div>
-                <div class="company">
+            <div class="company">
                     <h2>Company</h2>
                     <br /> 
-                    <a href="#">About Us</a>
-                    <a href="#">Affiliates</a>
-                    <a href="#">Resources</a>
-                    <a href="#">Partnership</a>
-                    <a href="#">Suppliers</a>
-                </div>
+                     <a href="#about">About Us</a>
+                    <a href="#menu">Our Products</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#blogs">Blog</a>
+                    <a href="#review">Reviews</a>
+ </div>
                 <div class="newsletters">
                     <h2>Newsletters</h2>
                     <br /> 
