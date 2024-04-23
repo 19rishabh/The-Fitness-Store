@@ -7,7 +7,7 @@
     session_start();
 
     $user = $_SESSION['username'];
-    $sql1 = "SELECT id FROM users WHERE username = '$user'";
+    $sql1 = "SELECT * FROM users WHERE username = '$user'";
     $result = pg_query($con, $sql1);
     $row = pg_fetch_assoc($result);
     $id = $row['id'];
